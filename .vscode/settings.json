@@ -1,0 +1,32 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "xprotocol"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 33060,
+      "driver": "MySQL",
+      "name": "Spotify",
+      "database": "Spotify",
+      "username": "root",
+      "password": "ManyaGarg0205",
+      "connectionTimeout": 100
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "xprotocol",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "root",
+      "database": "Manya",
+      "username": "manya",
+      "password": "manya"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+# React is a JavaScript library made and developed by Facebook used to make complex UI
+
+# Why React?
+1. Component based approach - Building blocks (piece of code) in React which can be reused
+2. uses a Declarative approach (normally, used by frameworks but used by library like React) - client knows the product but not any functionalities
+3. DOMS updates are handled gracefully
+4. React is used for speed
+
+# To create a create-app - npx create-react-app <name>
+# To run the React App => npm start
+
+# Understanding the create-app directory:
+1. node_modules: this folder is a repository of modules and libraries that are being used in a the project. whatever is imported inside the project using npm install, that time, the module is installed inside node_module and one entry is added in package.json functionalities.
+2. package.json: contains all the metadata related to react app [package information, versions etc]
+3. index.js: all code comes here
+4. index.css: all css code here
+5. App.js: one Component
+
+# Creating a React Project:
+=> Understanding file structure:
+    In this project, we have created few folders like 
+    components which contain single components which are used in our project
+    containers are groups of components used.
+
+
+
+# Writing index.js:
+=> import all the modules, react and react-dom using camel case variables
+=> render the react object, attributes of render function are as follows
+    1. kya dikhana hai
+    2. kahan dikhana hai    
+    3. call back function
+
+    rendering a website - rendering a webpage is the process of turning HTML, CSS, and JavaScript code into an interactive page that website visitors expect to see when clicking on a link
+    rendering for root tag, means the particular component in "kya dikhana hai" will be rendered inside the "kahan dikhana hai" which is root
+=> rendering multiple elements: we cannot use mutiple JSX elements [which means not more that one enclosing tag can be used, hence, to render mutiple tags, we enclose our JSX into <> JSX </>]
+=> React.Fragment - Atlernative of <> </>
+=> We divide our webpage into components which we import in our main index file. This components are functional unit of React.
+=> Using props: After dividing our webpage into components, for every component, we would need different data, for which we use react functionality of props, we pass our custom attributes to the component as parameters.
+    Object props will be such that PROPS{custom_attribute1, custom_attribute2 and so..on}, so to access our desired attribute we would need to access using object method of accessing data.
+    For eg, in our source index file, <Card {attributes list}/>
+    In our Card JSX, we make the Card(props)
+    
+=> Using arrays to access data: After this we would realize that giving the data in index file like <Card {attributes list}/>, would make the file really bulky and hard to understand.
+    To prevent this, we make array of objects in another file and export that file, then, by importing the file,
+    we can create such that, <Card attribute = data[0].this_attribute and so on>, which would make it less bulkier.
+    
+
+
+# Why does our code for modern JavaScript work on older environments as well?
+Babel which is automatically installed when we install React has a powerful ability to transpile our modern JavaScript code into different versions that can run in all environments.
+
+# JSX - JavaScript extension : HTML component in render method of ReactDOM is called JSX expression
+React module is imported to use JSX because JSX after rendering is converted into React script using Babel
+# To use JavaScript variables inside JSX: we use JavaScript component {variable-name}
+# JSX attributes: using HTML attributes inside JSX script is know as JSX attributes
+    1. class => className
+    2. attri-bute => attriBute
+
+We need to import the CSS script in our react file to use CSS
+We can also use inline CSS such as style = {{object with all the required CSS properties}} inside the JSX tag like a normal attributes
+
+# import and export in react: if we want to export components from other files
+    1. first command where we write "export default <component-name>" which exports that particular component as default
+    2. second command where we write "export {component1}, {component2}" etc. for exporting more than default component
+    
+    we import these files as 
+    1. import * as <name> from "./address" for importing all the components which are exported as an object <name>
+    2. import default-component-name from "./address"
+    3. import {}, {}, {} from "./address"
+    
+ 
+
+#Important Shortcuts:
+1. rafce - creates a react file
+

@@ -1,0 +1,97 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding: 0 5vw;
+  border-bottom: 1px solid #dadada;
+}
+
+.nav ul.bar {
+  display: flex;
+  list-style: none;
+  gap: 4vw;
+}
+
+.nav h2 {
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.nav ul {
+  font-size: 2vw;
+}
+
+.nav i {
+  display: none;
+}
+
+.content {
+  display: flex;
+  /* flex-direction: row; */
+  width: 100%;
+  height: calc(100% - 90px);
+  position: relative;
+}
+.content .red {
+  width: 50%;
+  height: 100%;
+  background-color: cornflowerblue;
+}
+.content .blue {
+  width: 50%;
+  height: 100%;
+  background-color: plum;
+}
+
+@media (max-width: 600px) {
+  .nav h2 {
+    font-size: 20px;
+  }
+  .nav i {
+    display: block;
+    font-size: 25px;
+  }
+  .nav ul,
+  li {
+    display: none;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content .red {
+    width: 100%;
+  }
+  .content .blue {
+    width: 100%;
+  }
+}
+
+@media (min-width: 950px) {
+  .nav h2 {
+    font-size: 30px;
+  }
+  .nav li {
+    font-size: 20px;
+  }
+}

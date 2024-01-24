@@ -1,0 +1,22 @@
+Understanding units - 
+1. pixel is always fixed
+2. percentage is wrt to size of parent element
+3. vw and vh is wrt viewwight and viewheight 
+4. vmax and vmin are viewport maximum and viewport minimum - which is according to maximum or minimum of dimensions of device
+5. em and rem is wrt to parent element and wrt to size of root, and value of one rem is 16 pixel
+
+Layout of website - 
+absolute or flex? display flex makes it easier to create responsive websites 
+if we give our website, display flex, it will shrink the size of content with display as flex
+to which we give the parent flex wrap to ensure the size remains the same and if the screen size decreases, the flex wraps 
+
+Media Queries - 
+@media (max-width 600px){ => for screens which have less than 600px width
+    
+}
+
+600px is standard for portable devices and is a typical breakpoint for devices
+
+Mobile First Approach
+
+calc() is a function which is used to calculate tedious calculations for example difference between percentage and pixel

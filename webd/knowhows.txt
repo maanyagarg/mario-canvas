@@ -1,0 +1,25 @@
+=> write the boilerplate code for css and html
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+=> always give position relative to parent containers 
+=> give the videos property, object-fit: cover to make them fit the whole div without worrying about proportions
+=> Locomotive Scroll - library used for applying various scrolling effects.
+    it alters CSS transform property values on elements to create scrolling effects.
+    they are used to create Parallax effects - some elements are made to look like they are deep in the background
+    two key attributes to always call upon locomotive - 
+    1. data-scroll - detects whether or not an element is in the viewport
+    2. data-scroll-container - wraps all the HRTML content you want to watch for scrolling
+
+=> effect 1 - paragraph darken word by word as the scroll is done further
+we convert the paragraph inside the tag to span tag word by word, and to all span tag we apply
+scrolltrigger
